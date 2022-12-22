@@ -1,6 +1,6 @@
 import React from 'react';
-
 import './App.css';
+import {Technologies} from "./components/Technologies";
 
 function App() {
     return (
@@ -20,14 +20,5 @@ const Header = () => {
         </div>
     )
 }
-const Technologies = () => {
-    return(
-        <ul>
-            <li>css</li>
-            <li>html</li>
-            <li>js</li>
-            <li>react</li>
-        </ul>
-    )
-}
+
 export default App;
