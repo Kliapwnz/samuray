@@ -1,14 +1,16 @@
 .app-wrapper {
-  display: grid;
+    display: grid;
 }
 
-.header{
+.header {
+    grid-area: h;
 
 }
+
 .nav {
-
+    grid-area: n;
 }
 
-.content{
-
+.content {
+    grid-area: c;
 }
