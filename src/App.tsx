@@ -26,6 +26,7 @@ function App() {
                 </div>
                 <div>
                     My posts
+                    <div>New post</div>
                 </div>
             </div>
         </div>
