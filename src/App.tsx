@@ -10,9 +10,11 @@ function App() {
                     src={"https://www.freepnglogos.com/uploads/company-logo-png/company-logo-telestream-press-kit-12.png"}/>
             </header>
             <nav className="nav">
-                <div>Profile</div>
-                <div>Messages</div>
-                <div>Users</div>
+                <div><a>Profile</a></div>
+                <div><a>Messages</a></div>
+                <div><a>News</a></div>
+                <div><a>Music</a></div>
+                <div><a>Settings</a></div>
             </nav>
             <div className="content">Main content</div>
         </div>
