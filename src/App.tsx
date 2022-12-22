@@ -1,21 +1,14 @@
 import React from 'react';
 import './App.css';
+import {Header} from "./components/Header";
+import {Navbar} from "./components/Navbar";
 
 
 function App() {
     return (
         <div className="app-wrapper">
-            <header className="header">
-                <img
-                    src={"https://www.freepnglogos.com/uploads/company-logo-png/company-logo-telestream-press-kit-12.png"}/>
-            </header>
-            <nav className="nav">
-                <div><a>Profile</a></div>
-                <div><a>Messages</a></div>
-                <div><a>News</a></div>
-                <div><a>Music</a></div>
-                <div><a>Settings</a></div>
-            </nav>
+           <Header/>
+            <Navbar/>
             <div className="content">
                 <div>
                     <img
