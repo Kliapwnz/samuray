@@ -28,6 +28,11 @@ function App() {
                     My posts
                     <div>New post</div>
                 </div>
+                <div>
+                    <div>Post 1</div>
+                    <div>Post 2</div>
+                    <div>Post 3</div>
+                </div>
             </div>
         </div>
     );
