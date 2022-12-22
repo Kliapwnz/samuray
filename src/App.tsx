@@ -16,7 +16,7 @@ function App() {
                 <div><a>Music</a></div>
                 <div><a>Settings</a></div>
             </nav>
-            <div className="content">Main content</div>
+            <div className="content"><img src={"https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"}/></div>
         </div>
     );
 }
