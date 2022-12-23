@@ -7,3 +7,7 @@
 .item {
     color: azure;
 }
+
+.active {
+    color: #cccf00;
+}
