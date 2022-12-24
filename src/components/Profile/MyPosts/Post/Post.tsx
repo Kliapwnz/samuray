@@ -6,6 +6,9 @@ export const Post = () => {
         <div className={n.item}>
             <img src="https://i.pinimg.com/564x/d8/41/82/d84182336935828005445c08389fc68b.jpg"/>
             Post 1
+            <div>
+                <span>Like</span>
+            </div>
         </div>
     );
 };
