@@ -5,7 +5,7 @@ export const Dialogs = () => {
     return (
         <div className={n.dialogs}>
             <div className={n.dialogsItems}>
-                <div className={n.dialog}>Anastasiya</div>
+                <div className={n.dialog + " " + n.active}>Anastasiya</div>
                 <div className={n.dialog}>Elena</div>
                 <div className={n.dialog}>Dmitriy</div>
                 <div className={n.dialog}>Yuriy</div>
