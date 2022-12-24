@@ -4,10 +4,10 @@
     padding: 10px;
 }
 
-.item {
+.item a {
     color: azure;
 }
 
-.active {
+.item a.active {
     color: #cccf00;
 }
