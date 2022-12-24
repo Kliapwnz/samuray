@@ -5,14 +5,18 @@ export const Dialogs = () => {
     return (
         <div className="dialogs">
             <div className="dialogs-items">
-                <div className="item">Anastasiya</div>
-                <div className="item">Elena</div>
-                <div className="item">Dmitriy</div>
-                <div className="item">Yuriy</div>
-                <div className="item">Natalia</div>
-                <div className="item">Natan</div>
+                <div className="dialog">Anastasiya</div>
+                <div className="dialog">Elena</div>
+                <div className="dialog">Dmitriy</div>
+                <div className="dialog">Yuriy</div>
+                <div className="dialog">Natalia</div>
+                <div className="dialog">Natan</div>
             </div>
-            <div className="message"></div>
+            <div className="messages">
+                <div className="message">Hello</div>
+                <div className="message">How are you?</div>
+                <div className="message">where are u from?</div>
+            </div>
         </div>
     );
 };
