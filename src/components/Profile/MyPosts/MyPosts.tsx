@@ -13,6 +13,9 @@ export const MyPosts = () => {
             </div>
             <div>
                 <Post/>
+                <Post/>
+                <Post/>
+                <Post/>
             </div>
         </div>
 
