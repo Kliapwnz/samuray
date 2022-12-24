@@ -4,7 +4,6 @@ import {Post} from "./Post/Post";
 
 export const MyPosts = () => {
     return (
-
         <div>
             My posts
             <div>
@@ -12,10 +11,10 @@ export const MyPosts = () => {
                 <button>Add post</button>
             </div>
             <div>
-                <Post/>
-                <Post/>
-                <Post/>
-                <Post/>
+                <Post text="Hello all!"/>
+                <Post text="Im first time here!"/>
+                <Post text="I Likes apples"/>
+                <Post text="My name is Simon"/>
             </div>
         </div>
 
