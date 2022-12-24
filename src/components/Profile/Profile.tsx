@@ -14,7 +14,7 @@ export const Profile = () => {
                 ava + description
             </div>
             <MyPosts/>
-            <Post/>
+
         </div>
     );
 };
