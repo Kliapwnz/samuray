@@ -1,7 +1,7 @@
 import React from 'react';
 import n from "./Profile.module.css"
 import {MyPosts} from "./MyPosts/MyPosts";
-import {Post} from "./MyPosts/Post/Post";
+
 
 export const Profile = () => {
     return (
