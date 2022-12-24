@@ -6,6 +6,7 @@
 
 .item a {
     color: azure;
+    text-decoration: none;
 }
 
 .item a.active {
