@@ -4,11 +4,15 @@ import {Post} from "./Post/Post";
 
 export const MyPosts = () => {
     return (
-        <div>
+        <div className={n.postsBlock}>
             My posts
             <div>
-                <textarea></textarea>
-                <button>Add post</button>
+                <div>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <button>Add post</button>
+                </div>
             </div>
             <div>
                 <Post message="Hello all!" like={5}/>
@@ -17,7 +21,6 @@ export const MyPosts = () => {
                 <Post message="My name is Simon" like={12}/>
             </div>
         </div>
-
     );
 };
 
