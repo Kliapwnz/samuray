@@ -1,6 +1,7 @@
 import React from 'react';
 import n from "./Dialogs.module.css"
 import {DialogItem} from "./DialogItem/DialogItem";
+import {Message} from "./Message/Message";
 
 export const Dialogs = () => {
     return (
@@ -14,9 +15,9 @@ export const Dialogs = () => {
                 <DialogItem name="Natan" id={6}/>
             </div>
             <div className={n.messages}>
-                <div className={n.message}>Hello</div>
-                <div className={n.message}>How are you?</div>
-                <div className={n.message}>where are u from?</div>
+                <Message message="Hello"/>
+                <Message message="How are you?"/>
+                <Message message="where are u from?"/>
             </div>
         </div>
     );
