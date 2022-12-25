@@ -7,7 +7,7 @@ type PropsType = {
     id: number
 }
 
-export const Dialog = (props: PropsType) => {
+export const DialogItem = (props: PropsType) => {
     return (
         <div className={n.dialog + " " + n.active}>
             <NavLink to={"/dialogs/" + props.id}>{props.name}</NavLink>
