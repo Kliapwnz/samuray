@@ -5,7 +5,7 @@ import {Message} from "./Message/Message";
 
 export const Dialogs = () => {
 
-    const dialogsData = [
+    const dialogs = [
         {id: 1, name: "Anastasiya"},
         {id: 2, name: "Elena"},
         {id: 3, name: "Dmitriy"},
@@ -14,19 +14,23 @@ export const Dialogs = () => {
         {id: 6, name: "Natan"},
     ]
 
-    const messagesData = [
+    const messages = [
         {id:1 ,message:"Hello" },
         {id:2 ,message:"How are you?" },
         {id:3 ,message:"where are u from?" },
     ]
 
+    const dialogElements = dialogs.map(e=><DialogItem name={e.name} id={e.id}/>)
+    const messagesElements = messages.map(e=><Message message={e.message}/>)
+
+
     return (
         <div className={n.dialogs}>
             <div className={n.dialogsItems}>
-                {dialogsData.map(e=><DialogItem name={e.name} id={e.id}/>)}
+                {dialogElements}
             </div>
             <div className={n.messages}>
-                {messagesData.map(e=><Message message={e.message}/>)}
+                {messagesElements}
             </div>
         </div>
     );
