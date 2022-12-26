@@ -4,14 +4,14 @@ import {Post} from "./Post/Post";
 
 export const MyPosts = () => {
 
-    const post = [
+    const posts = [
         {id: 1, message: "Hello all!", likeCount: 15},
         {id: 2, message: "Im first time here!", likeCount: 22},
         {id: 3, message: "I Likes apples", likeCount: 12},
         {id: 4, message: "My name is Simon", likeCount: 40},
     ]
 
-    const postElement = post.map(e => <Post message={e.message} likeCount={e.likeCount}/>)
+    const postElement = posts.map(e => <Post message={e.message} likeCount={e.likeCount}/>)
 
     return (
         <div className={n.postsBlock}>
