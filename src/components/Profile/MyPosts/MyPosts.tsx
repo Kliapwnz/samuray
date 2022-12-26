@@ -1,15 +1,9 @@
 import React from 'react';
 import n from "./MyPosts.module.css";
 import {Post} from "./Post/Post";
+import {posts} from "../../../index";
 
 export const MyPosts = () => {
-
-    const posts = [
-        {id: 1, message: "Hello all!", likeCount: 15},
-        {id: 2, message: "Im first time here!", likeCount: 22},
-        {id: 3, message: "I Likes apples", likeCount: 12},
-        {id: 4, message: "My name is Simon", likeCount: 40},
-    ]
 
     const postElement = posts.map(e => <Post message={e.message} likeCount={e.likeCount}/>)
 
