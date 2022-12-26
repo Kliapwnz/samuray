@@ -20,9 +20,8 @@ export const Dialogs = () => {
         {id:3 ,message:"where are u from?" },
     ]
 
-    const dialogElements = dialogs.map(e=><DialogItem name={e.name} id={e.id}/>)
-    const messagesElements = messages.map(e=><Message message={e.message}/>)
-
+    const dialogElements = dialogs.map(d=><DialogItem name={d.name} id={d.id}/>)
+    const messagesElements = messages.map(m=><Message message={m.message}/>)
 
     return (
         <div className={n.dialogs}>
