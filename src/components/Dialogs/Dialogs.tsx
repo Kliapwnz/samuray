@@ -15,13 +15,13 @@ export const Dialogs = () => {
     ]
 
     const messages = [
-        {id:1 ,message:"Hello" },
-        {id:2 ,message:"How are you?" },
-        {id:3 ,message:"where are u from?" },
+        {id: 1, message: "Hello"},
+        {id: 2, message: "How are you?"},
+        {id: 3, message: "where are u from?"},
     ]
 
-    const dialogElements = dialogs.map(d=><DialogItem name={d.name} id={d.id}/>)
-    const messagesElements = messages.map(m=><Message message={m.message}/>)
+    const dialogElements = dialogs.map(d => <DialogItem name={d.name} id={d.id}/>)
+    const messagesElements = messages.map(m => <Message message={m.message}/>)
 
     return (
         <div className={n.dialogs}>
