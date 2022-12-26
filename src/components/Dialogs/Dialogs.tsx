@@ -23,12 +23,10 @@ export const Dialogs = () => {
     return (
         <div className={n.dialogs}>
             <div className={n.dialogsItems}>
-                {dialogsData.map((e)=><DialogItem name={e.name} id={e.id}/>)}
+                {dialogsData.map(e=><DialogItem name={e.name} id={e.id}/>)}
             </div>
             <div className={n.messages}>
-                <Message message="Hello"/>
-                <Message message="How are you?"/>
-                <Message message="where are u from?"/>
+                {messagesData.map(e=><Message message={e.message}/>)}
             </div>
         </div>
     );
