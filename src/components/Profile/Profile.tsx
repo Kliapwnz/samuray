@@ -3,7 +3,6 @@ import n from "./Profile.module.css"
 import {MyPosts} from "./MyPosts/MyPosts";
 import {ProfileInfo} from "./ProfileInfo/ProfileInfo";
 import {ProfilePageType, RootStateType, state} from "../../Redux/State";
-import {Post} from "./MyPosts/Post/Post";
 
 type PropsType = {
     profilePage:ProfilePageType
