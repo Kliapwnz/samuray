@@ -25,7 +25,7 @@ type RootStateType={
     sidebar:SidebarType
 }
 
-export let state = {
+export let state:RootStateType = {
     profilePage: {
         posts: [
             {id: 1, message: "Hello all!", likeCount: 15},
