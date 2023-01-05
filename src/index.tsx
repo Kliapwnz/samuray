@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import {state} from "./Redux/State";
 
 
-
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
