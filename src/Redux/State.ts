@@ -18,7 +18,12 @@ type DialogPageType = {
     dialogs: DialogType[]
     messages: MessageType[]
 }
-type sidebar = {}
+type SidebarType = {}
+type RootStateType={
+    profilePage:ProfilePageType
+    dialogsPage:DialogPageType
+    sidebar:SidebarType
+}
 
 export let state = {
     profilePage: {
