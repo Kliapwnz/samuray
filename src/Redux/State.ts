@@ -19,13 +19,13 @@ export type DialogPageType = {
     messages: MessageType[]
 }
 type SidebarType = {}
-export type RootStateType={
-    profilePage:ProfilePageType
-    dialogsPage:DialogPageType
-    sidebar:SidebarType
+export type RootStateType = {
+    profilePage: ProfilePageType
+    dialogsPage: DialogPageType
+    sidebar: SidebarType
 }
 
-export let state:RootStateType = {
+export let state: RootStateType = {
     profilePage: {
         posts: [
             {id: 1, message: "Hello all!", likeCount: 15},
@@ -49,8 +49,17 @@ export let state:RootStateType = {
             {id: 3, message: "where are u from?"},
         ]
     },
-    sidebar: {}
-}
+    sidebar: {},
 
+
+}
+export const addPost = (postMessage:string) => {
+    let newPost = {
+        id:5,
+        message:postMessage,
+        likeCount: 0
+    };
+    state.profilePage.posts.push(newPost);
+}
 
 
