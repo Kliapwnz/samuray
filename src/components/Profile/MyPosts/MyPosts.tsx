@@ -11,6 +11,10 @@ export const MyPosts = (props:PropsType) => {
 
     const postElement = props.posts.map(e => <Post message={e.message} likeCount={e.likeCount}/>)
 
+    const addPostHandler = () =>{
+
+    }
+
     return (
         <div className={n.postsBlock}>
             <h3>My posts</h3>
@@ -19,7 +23,7 @@ export const MyPosts = (props:PropsType) => {
                     <textarea></textarea>
                 </div>
                 <div>
-                    <button onClick={()=>{}}>Add post</button>
+                    <button onClick={addPostHandler}>Add post</button>
                 </div>
             </div>
             <div className={n.posts}>
