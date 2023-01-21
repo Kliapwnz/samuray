@@ -8,24 +8,22 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {RootStateType} from "./Redux/State";
 
 type PropsType = {
-    state:RootStateType
+    state: RootStateType
 }
 
-function App(props:PropsType) {
+function App(props: PropsType) {
 
     return (
-        <BrowserRouter>
-            <div className="app-wrapper">
-                <Header/>
-                <Navbar/>
-                <div className="app-wrapper-content">
-                    <Routes>
-                        <Route path="/profile/*" element={<Profile profilePage={props.state.profilePage}/>}/>
-                        <Route path="/dialogs/*" element={<Dialogs dialogsPage={props.state.dialogsPage}/>}/>
-                    </Routes>
-                </div>
+        <div className="app-wrapper">
+            <Header/>
+            <Navbar/>
+            <div className="app-wrapper-content">
+                <Routes>
+                    <Route path="/profile/*" element={<Profile profilePage={props.state.profilePage}/>}/>
+                    <Route path="/dialogs/*" element={<Dialogs dialogsPage={props.state.dialogsPage}/>}/>
+                </Routes>
             </div>
-        </BrowserRouter>
+        </div>
     );
 }
 
