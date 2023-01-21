@@ -5,6 +5,7 @@ import {PostType} from "../../../Redux/State";
 
 type PropsType = {
     posts: PostType[]
+    addPost:(postMessage:string)=>void
 }
 
 export const MyPosts = (props: PropsType) => {

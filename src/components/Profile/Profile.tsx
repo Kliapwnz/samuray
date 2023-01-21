@@ -14,7 +14,7 @@ export const Profile = (props:PropsType) => {
     return (
         <div>
             <ProfileInfo/>
-            <MyPosts posts={props.profilePage.posts}/>
+            <MyPosts posts={props.profilePage.posts} addPost={props.addPost}/>
         </div>
     );
 };
