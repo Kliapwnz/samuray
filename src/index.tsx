@@ -1,25 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {addPost, RootStateType, state} from "./Redux/State";
-import {BrowserRouter} from "react-router-dom";
+import {state} from "./Redux/State";
 
-const rerenderEntireTree = (state:RootStateType) => {
-    const root = ReactDOM.createRoot(
-        document.getElementById('root') as HTMLElement
-    );
+import {rerenderEntireTree} from "./render";
 
-    root.render(
-        <BrowserRouter>
-            <App
-                state={state}
-                addPost={addPost}
-            />
-        </BrowserRouter>
-    );
-}
+
 rerenderEntireTree(state);
 
 // If you want to start measuring performance in your app, pass a function
