@@ -23,9 +23,9 @@ export const Dialogs = (props: PropsType) => {
                 {dialogElements}
             </div>
             <div className={n.messages}>
+                {messagesElements}
                 <textarea ref={newMessageElement}></textarea>
                 <button onClick={addMessageHandler}>Send message</button>
-                {messagesElements}
             </div>
         </div>
     );
