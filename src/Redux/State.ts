@@ -54,8 +54,8 @@ export let state: RootStateType = {
 
 }
 export const addPost = (postMessage:string) => {
-    let newPost = {
-        id:5,
+    let newPost:PostType = {
+        id:new Date().getTime(),
         message:postMessage,
         likeCount: 0
     };
